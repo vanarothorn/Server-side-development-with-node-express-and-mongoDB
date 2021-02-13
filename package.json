@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "Please set up a test file"
   },
   "keywords": [],
   "author": "",
