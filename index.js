@@ -3,12 +3,12 @@ const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
 const dishRouter = require('./routes/dishRouter');
+const promoRouter = require('./routes/promoRouter');
 
-// parse application/x-www-form-urlencoded
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/dishes', dishRouter);
+app.use('/promotions', promoRouter);
 
 app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
